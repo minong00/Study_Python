@@ -1,4 +1,4 @@
-#개발
+#개발 중
 memo={}
 
 def jjak(remain,sit):
