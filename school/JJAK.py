@@ -12,7 +12,8 @@ def jjak(remain,sit):
     if (remain==0):
         return 1
     for i in range(sit,remain+1):
-        if()
+        return 1
+        #if()
 
 
 print(jjak(100,2))
