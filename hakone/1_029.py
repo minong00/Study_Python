@@ -1,25 +1,27 @@
-def Max(a,b):
+from django.template.defaultfilters import yesno
+
+
+def gcd(a,b):
     #최대공약수
     if(a<b):
         max=b
     else:
         max=a
-    for i in range(max,1,-1):
+    for i in range(max,0,-1):
         if(a%i==0 and b%i==0):
             return i
 
-def Min(a,b):
-    i=2
-    while(True):
-        a=a//i
-        print(a)
-        b=b//i
-        print(b)
-        if(a//i==0 or b//i==0):
-            return a*b*i
+def gcd2(a,b):
+    while(a%b!=0):
+        z=a%b
+        a=b
+        b=z
+    return b
 
-        i=i+1
 
-a=2
-b=15
-print(Min(a,b))
+a=int(input())
+b=int(input())
+ab=a*b
+v=gcd2(a,b)
+print(v)
+print(ab//v)
