@@ -34,6 +34,8 @@ a=[[cnt for _ in range(0,3)] for _ in range(0,4)]
 for i in range(0,4):
     for j in range(0,3):
         a[i][j]=ship-cnt
+
+
         print(a[i][j],end=" ")
         sum+=a[i][j]
         cnt+=1
